@@ -1,0 +1,526 @@
+* {
+    background-color: #252925;
+}
+
+main {
+  background-color: #252925;
+  color: #af8b53;
+  min-height: 100vh;
+  font-family: "Forum", sans-serif;
+}
+
+.parent {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border-bottom: 1px solid #af8b53;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  width: 50%;
+  padding: 1rem 1rem 0rem 1rem;
+  margin: 2rem;
+}
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+.description {
+  margin: 2rem 0;
+  line-height: 4.25rem;
+  font-size: 4.5rem;
+  padding: 3rem 0 1rem 0rem;
+  font-weight: lighter;
+}
+.card {
+  background-color: #252925;
+  color: #af8b53;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 8rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #9d793f;
+  border-color: #9d793f;
+}
+
+.right-section {
+  flex: 1;
+  width: 50%;
+  padding: 0;
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Adjust the right margin to 5em */
+}
+/* Responsive for Section 1 */
+@media screen and (max-width: 1400px) {
+    .left-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 1rem 0rem 1rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    .description {
+        margin: 1rem 0;
+        line-height: 3.25rem;
+        font-size: 3.5rem;
+        padding: 1rem 0 1rem 0rem;
+    }
+    .card {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 8rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+   
+    
+}
+@media screen and (max-width: 768px) {
+  /* Make the text and image stack on top of each other for smaller screens */
+  .parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+  }
+    .left-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 1rem 0rem 1rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    .title {
+        margin: 0 0 0 -12rem;
+        line-height: 1.15;
+        font-size: 1.125rem;
+        font-weight: lighter;
+    }
+    .description {
+        margin: 1rem 0;
+        line-height: 3.25rem;
+        font-size: 3.5rem;
+        padding: 1rem 0 1rem 0rem;
+    }
+    .card {
+        padding: 0;
+        margin: 0;
+        border-radius: 8rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+    .right-section {
+       width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Make the text and image stack on top of each other for smaller screens */
+    .parent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px;
+      margin: 5px;
+    }
+      .left-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          padding: 1rem 1rem 0rem 1rem;
+          margin: 1rem;
+          font-size: 1.5rem;
+      }
+      .title {
+          margin: 0 0 0 -12rem;
+          line-height: 1.15;
+          font-size: 1.125rem;
+          font-weight: lighter;
+      }
+      .description {
+          margin: 1rem 0;
+          line-height: 3.25rem;
+          font-size: 3.5rem;
+          padding: 1rem 0 1rem 0rem;
+      }
+      .card {
+          padding: 0;
+          margin: 0;
+          border-radius: 8rem;
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+          font-size: 1rem;
+      }
+      .right-section {
+         width: 100%;
+      }
+  }
+
+/* Section 2 */
+
+.parent2 {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.left-section2 {
+  flex: 1;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+  margin: 5rem 2rem 2rem 2rem;
+  font-size: 2.5rem;
+}
+.img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right-section2 {
+    
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+.right-section2, .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1rem;
+  
+}
+/* Responsive for Section 2 */
+
+@media (max-width: 768px) {
+  /* Make the text and image stack on top of each other for smaller screens */
+  .left-section2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+    .parent2 {
+      display: flex;
+      justify-content: center;
+        align-items: center;
+      padding: 5px;
+      margin: 5px;
+    }
+    .left-section2 {
+      display: none;
+    }
+    
+    .vision {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      padding: 1rem;
+      margin: 5rem 2rem 2rem 2rem;
+      font-size: 1.5rem;
+    }
+    .card, .right-section2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      margin: 1rem;
+      font-size: 1rem;
+    }
+}
+
+/* section 3- 3 images across */
+.parent3 {
+  display: flex;
+  padding: 1rem;
+  margin: 0rem;
+  border-bottom: 1px solid #af8b53;
+}
+.left-section3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 1rem 1rem 0rem 1rem;
+  margin: 1rem;
+}
+
+.img3 {
+  width: 30%;
+  margin: 0 1rem 0 1rem;
+}
+
+
+/* Responsive for Section 3 */
+
+@media screen and (max-width: 768px) {
+  .parent3 {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+  }
+  .left-section3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .img3 {
+    width: 30%;
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .parent3 {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+  }
+  .left-section3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .img3 {
+    width: 30%;
+    margin: 0.5rem;
+    padding: 0;
+  }
+}
+
+/* Section 4 Text */
+.parent4 {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  border-bottom: 1px solid #af8b53;
+}
+.text4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  font-size: 2.5rem;
+  
+}
+.textpoint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  border-left: 1px solid #af8b53;
+}
+
+/* Responsive for Section 4 */
+@media screen and (max-width: 768px) {
+  .parent4 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .text4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem 0 2rem 0;
+    text-align: left;
+  }
+  .textpoint {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+    .parent4 {
+      display: flex;
+      padding: 5px;
+      margin: 5px;
+    }
+    .text4 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+    .textpoint{
+      width: 100%;
+      margin: 0.5rem;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+/* Section 5 */
+.parent5 {
+  display: flex;
+  padding: 0 1rem 0 1rem;
+  margin: 0;
+  border-bottom: 1px solid #af8b53;
+}
+blockquote {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+.icon {
+    object-fit: scale-down;
+    
+}
+
+/* Responsive for Section 5 */
+@media screen and (max-width: 768px) {
+  .parent5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0rem ;
+  }
+  blockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+
+/* Section 6 */
+
+.parent6 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+h2.left-section6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+.left-section6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+    font-size: 1.25rem;
+}
+a {
+  text-decoration: none;
+  color: #af8b53;
+}
+/* .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.8rem;
+  margin: .5rem 0 1rem 0;
+  font-size: 1rem;
+} */
+a:hover {
+  color: #9d793f;
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 1rem;
+  background-color: #252925;
+  color: #af8b53;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-align: center;
+}
+

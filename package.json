@@ -1,0 +1,19 @@
+{
+  "name": "pjdev",
+  "version": "1.0.0",
+  "description": "Project for remodeling firm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyann505/pjdev.git"
+  },
+  "keywords": [],
+  "author": "EmilyClarkDeveloper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyann505/pjdev/issues"
+  },
+  "homepage": "https://github.com/emilyann505/pjdev#readme",
+  "devDependencies": {
+    "sonarlint": "1.1.0"
+  }
+}
